@@ -8,7 +8,7 @@ import cart_icon from "../Assets/cart_icon.png"
 const Navbar = () => {
     const [menu,setMenu] = useState("shop");
   return (
-    <nav className='flex justify-around items-cente py-6 border-2 shadow-md'>
+    <nav className='flex-col flex justify-center items-center  gap-4 items-cente py-6 border-2 shadow-md  md:flex-row md:justify-around '>
         <div className='flex items-center gap-2'>
         <img src={logo} alt="" className='w-10'/>
         <span className='font-semibold text-3xl'>SHOPPER</span>
@@ -21,7 +21,7 @@ const Navbar = () => {
         </ul>
 
         <div className='flex items-center gap-4'>
-            <button className='border rounded-full px-6 py-1'>Login</button>
+            <button className='border-2 border-gray-300 rounded-full px-6 py-1 hover:bg-gray-50'>Login</button>
             <img src={cart_icon} alt="" className='w-6'/>
             <div className='w-[22px] h-[22px] flex justify-center items-center mt-[-38px] ml-[-28px] text-[14px]  bg-red-600 text-white rounded-[13px]'>0</div>
         </div>
